@@ -1,0 +1,452 @@
+
+body {
+    font-family: Lato, "Noto Sans JP", "游ゴシック", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body,p,a,li,td,th,h1,h2,h3,h4,h5,h6 {
+    color: #444;
+}
+
+.font-mincho {
+    font-family: 'ＭＳ 明朝', 'MS Mincho','ＭＳ Ｐ明朝','MS PMincho','ヒラギノ明朝 ProN','Hiragino Mincho ProN','Yu Mincho Light','YuMincho','Yu Mincho','游明朝体',sans-serif;
+
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.content {
+    width: 1000px;
+    margin:0 auto;
+}
+
+
+
+
+/*ヘッダー*/
+.top-bar {
+    padding: 10px;
+
+}
+
+.logo {
+    font-size:32px;
+    font-weight: 900;
+    margin: 0 ;
+}
+
+.head-catch {
+    background-color: #000;
+    background-image: url(../img/back-head.jpg);
+    height: 702px;
+
+    position: relative;
+    z-index:0;
+
+    background-blend-mode:screen;
+
+}
+
+.head-img {
+    background-image: url(../img/head-img.png);
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    z-index: 10;
+    left: -180px;
+    mix-blend-mode: screen;
+
+}
+
+
+.head-catch .content {
+    position: relative;
+}
+
+.head-message {
+    position: absolute;
+    width: 50%;
+    right: -20px;
+    top:75px;
+    z-index: 100;
+}
+
+
+.head-message p{
+    font-size: 44px;
+    font-weight: 900;
+    color:#fff;
+    margin:0;
+    text-shadow: 2px 2px 4px #000;
+    line-height: 1.7em;
+    margin-bottom: 20px;
+}
+
+
+/*メッセージ*/
+
+.first-message {
+    background-image: url(../img/back-message.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+
+    padding: 40px 0px;
+
+}
+
+.first-message p {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 1.5em;
+}
+
+
+/*コンセプト*/
+.concept {
+    background-image: url(../img/back-concept.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+
+    padding: 80px 0px 60px 0px;
+}
+
+.concept-text2 {
+    font-size:30px;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px #000;
+    color: #fff;
+}
+
+.concept-text3 {
+    font-size:36px;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px #000;
+    color: #ff0;
+}
+
+
+/*実績*/
+
+.prize-list {
+    background-image: url(../img/back-prize.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    padding: 40px 20px;
+}
+
+.prize-list .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*コンタクトへ*/
+.to-contact {
+    background: rgb(75,75,75);
+    background: linear-gradient(to right, rgba(75,75,75,1) 0%,rgba(255,255,255,1) 50%,rgba(123,123,123,1) 100%);
+    padding: 8px 0px;
+}
+
+
+
+
+.to-contact div{
+    background-image: url(../img/back-contact.png);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    padding: 20px 20px;
+}
+
+.to-contact p {
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.to-contact p.text1 {
+    font-size:30px;
+    font-weight: 900;
+}
+
+.to-contact p.text2 {
+    font-size:24px;
+    font-weight: 600;
+}
+
+
+.btn-to-contact {
+    display: inline-block;
+    padding: 15px 120px;
+    background: #eb1616;
+    background: linear-gradient(to bottom, #b00000 0%,#f14949 50%,#eb1616 100%);
+
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.5);
+    color:#fff;
+    text-decoration: none;
+    font-size: 28px;
+    text-shadow: 2px 2px 2px #333;
+
+    margin: 40px 0;
+}
+
+.btn-to-contact:hover {
+    background: #bd0505;
+    background: linear-gradient(to bottom, #f47474 0%,#cd3f3f 50%,#bd0505 100%);
+
+}
+
+
+/*共通部品*/
+
+h2.section-title {
+    text-align: center;
+    font-size:32px;
+    margin-top: 80px;
+}
+
+h2.section-title:before {
+    display: block;
+    content: url(../img/line1.png);
+}
+
+
+/*お客様の声*/
+.customer-voice article {
+    width: 878px;
+    padding: 0px 60px;
+    margin: 128px auto 180px auto;
+
+    background-image: url(../img/frame_v_i.png);
+    background-repeat: repeat-y;
+
+    position: relative;
+}
+
+.customer-voice article:before {
+    display: block;
+    content: " ";
+    width: 878px;
+    height: 128px;
+
+    background-image: url(../img/frame_v_t.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    position: absolute;
+    left:0;
+    top: -70px;
+
+}
+
+.customer-voice article:after {
+    display: block;
+    content: " ";
+    width: 878px;
+    height: 128px;
+
+    background-image: url(../img/frame_v_b.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    position: absolute;
+    left:0;
+    bottom: -70px;
+
+}
+
+.voice-head {
+    display: flex;
+}
+
+.voice-head div {
+    padding: 20px;
+}
+
+.company-name {
+    font-size: 28px;
+    color:#ae8403;
+    font-weight: 500;
+}
+
+.customer-name {
+    font-size: 20px;
+}
+
+.customer-name span {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.customer-voice h3 {
+    font-size:32px;
+    color: #ae8403;
+    border-bottom: 1px solid #ae8403;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+
+/*会社概要*/
+.company-info table {
+    width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.company-info table tr {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.company-info table th {
+    background-color: #313131;
+    color: #fff;
+
+    text-align: center;
+    padding: 15px 0px;
+    font-weight: 400;
+    width: 200px;
+}
+
+.company-info table td {
+    padding: 15px 0px 15px 20px;
+
+}
+
+.company-info table td p{
+    margin: 0 0 1em 0;
+}
+
+
+
+/*コンタクト*/
+
+.contact-section article {
+    width: 598px;
+    padding: 0px 60px;
+    margin: 128px auto 180px auto;
+
+    background-image: url(../img/frame_c_i.png);
+    background-repeat: repeat-y;
+
+    position: relative;
+}
+
+.contact-section article:before {
+    display: block;
+    content: " ";
+    width: 598px;
+    height: 79px;
+
+    background-image: url(../img/frame_c_t.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    position: absolute;
+    left:0;
+    top: -79px;
+
+}
+
+.contact-section article:after {
+    display: block;
+    content: " ";
+    width: 598px;
+    height: 79px;
+
+    background-image: url(../img/frame_c_b.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    position: absolute;
+    left:0;
+    bottom: -79px;
+
+}
+
+.contact-section p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contact-section span {
+    color:#f00;
+    font-size: 14px;
+}
+
+.contact-section input[type="text"] ,select ,textarea  {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid#aaa;
+
+}
+
+.contact-section textarea {
+    resize: none;
+}
+
+.contact-section input[type="submit"] {
+    display: inline-block;
+    padding: 15px 80px;
+    background-color: #d80000;
+
+    border:none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.5);
+    color:#fff;
+    text-decoration: none;
+    font-size: 28px;
+    text-shadow: 2px 2px 2px #333;
+
+    margin: 10px 0 10px 0;
+}
+
+.contact-section input[type="submit"]:hover {
+    background: #ef2626;
+    cursor: pointer;
+
+}
+
+.contact-section input[type="submit"]:active {
+    box-shadow: none;
+    margin-top: 12px;
+    margin-bottom: 8px;
+}
+
+/*フッター*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+
+    padding: 10px;
+}
